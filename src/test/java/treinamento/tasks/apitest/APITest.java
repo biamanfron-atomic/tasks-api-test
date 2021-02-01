@@ -32,7 +32,7 @@ public class APITest
 	public void deveAdicionarTarefaComSucesso() 
 	{
 		given()
-			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2020-12-30\" }")
+			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2022-12-30\" }")
 			.contentType(ContentType.JSON)
 		.when()
 			.post("/todo")
@@ -60,7 +60,7 @@ public class APITest
 	{
 		//inserir
 		Integer id = given()
-			.body("{ \"task\": \"Tarefa teste\", \"dueDate\": \"2020-12-30\" }")
+			.body("{ \"task\": \"Tarefa teste\", \"dueDate\": \"2022-12-30\" }")
 			.contentType(ContentType.JSON)
 		.when()
 			.post("/todo")
